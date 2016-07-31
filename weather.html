@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>天气预报</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="weather.css">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="weather.js"></script>
+</head>
+<body>
+	<div class="containner">
+		<div class="today">
+			<div class="todayInfo">
+				<img id="logo" src="" width="40%">
+				<div class="preCity" id="preCity"></div>
+				<span class="date" id="date"></span>
+				<span class="week" id="week"></span>
+			</div>
+			<div class="specificInfo">
+				<ul>
+					<li>天气</li>
+					<li>温度</li>
+					<li>最低温度</li>
+					<li>最高温度</li>
+				</ul>
+				<ul>
+					<li id="weather"></li>
+					<li id="temp"></li>
+					<li id="tempLow"></li>
+					<li id="tempHigh"></li>
+				</ul>
+			</div>
+		</div>
+		<div class="search">
+			<form>
+				<input type="text" id="inputCity" placeholder="请输入城市名称">
+				<input type="button" id="btn" onclick="findWeather()" value="查询">
+			</form>
+		</div>
+		<div class="title">未来六天天气预报</div>
+		<div class="futureSixDays">
+			<div class="future"></div>
+			<div class="future"></div>
+			<div class="future"></div>
+			<div class="future"></div>
+			<div class="future"></div>
+			<div class="future"></div>
+		</div>
+	</div>
+</body>
+</html>
